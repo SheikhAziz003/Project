@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Maintenance Management System</title>
+    
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+
+    .navbar a:hover {
+        color: #ffdd57;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('https://wallpaperaccess.com/full/473239.jpg') no-repeat center center/cover;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 4px #000;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Categories Section */
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .category {
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        max-width: 300px;
+    }
+
+    .category img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .category h3 {
+        margin-top: 0.5rem;
+    }
+
+    .category:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Appointment Section */
+    .appointment {
+        background-color: #f4f4f4;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .appointment h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .appointment form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .appointment input, .appointment select, .appointment textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin: 0.5rem 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    .appointment button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .appointment button:hover {
+        background-color: #ffdd57;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* About Section */
+    .about {
+        padding: 3rem;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+        }
+
+        .category {
+            max-width: 100%;
+        }
+
+        .navbar a {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero h1 {
+            font-size: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 0.9rem;
+        }
+
+        .categories {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div>
+            <a href="#home">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+       
+        <h1 style="text-align: left;"> Vehicle Maintenance Management  System</h1>
+        <p style="text-align: center;" style="text-decoration-color: black;"><br><br><br><br><br><br> <b>Your Vehicle Our Responsibility!</b></p>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="categories">
+        <div class="category">
+            <img src="https://th.bing.com/th/id/OIP.Yre_dJjqw4Cz_gvHbYXr7QHaEK?rs=1&pid=ImgDetMain">
+            <a href="car.html" alt="Cars"><h3>Cars</h3></a>
+            <p>Comprehensive car services tailored for all makes and models.</p>
+        </div>
+        <div class="category">
+            <img src="https://th.bing.com/th/id/OIP.rmtSUHEXvBX9DX-gpD59tgHaEo?rs=1&pid=ImgDetMain">
+            <a href="bike.html" alt=BIKE><h3>Bikes</h3></a>
+            <p>Reliable bike services to keep your ride smooth and efficient.</p>
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Vehicle Maintenance Management System | Designed by VMMS Team</p>
+    </div>
+   
+
+
+   
+</body>
+</html>

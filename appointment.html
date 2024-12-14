@@ -1,0 +1,106 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .appointment {
+        background-image: url('https://th.bing.com/th/id/OIP.SyznhBUkSsO_oFAYm4UvUQHaE8?rs=1&pid=ImgDetMain');
+    background-color: #f4f4f4;
+    padding: 3rem;
+    text-align: center;
+}
+
+.appointment h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.appointment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.appointment input, .appointment select, .appointment textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.appointment button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.appointment button:hover {
+    background-color: #ffdd57;
+}
+body{
+    background-image: url('https://th.bing.com/th/id/OIP.SyznhBUkSsO_oFAYm4UvUQHaE8?rs=1&pid=ImgDetMain');
+    background-size: cover;
+            background-position: center;
+}
+
+</style>
+<body>
+    <div id="appointment" class="appointment">
+        <h2 ><strong>Book an Appointment</strong></h2>
+        <!-- <div style="background-image:url(https://th.bing.com/th/id/OIP.SyznhBUkSsO_oFAYm4UvUQHaE8?rs=1&pid=ImgDetMain) ;"></style> -->
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="service" required>
+                <option value="">Select a Service</option>
+                <option value="oil_change">Oil Change</option>
+                <option value="wheel_alignment">Wheel Alignment</option>
+                <option value="general_maintenance">General Maintenance</option>
+            </select>
+            <textarea name="message" placeholder="Additional Details (Optional)" rows="4"></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.appointment form');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission to handle validation
+    
+            // Get form field values
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const phone = document.querySelector('input[name="phone"]').value;
+            const service = document.querySelector('select[name="service"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+    
+            // Basic form validation
+            if (name === '' || email === '' || phone === '' || service === '') {
+                alert('Please fill out all required fields.');
+                return;
+            }
+    
+            // You can further improve validation like checking valid email, phone number format, etc.
+            // Here we show an alert for now:
+            alert('Your appointment has been successfully booked!');
+            
+            // Optional: After successful submission, you could clear the form
+            form.reset();
+        });
+    });
+</script>
+</body>
+</html>
